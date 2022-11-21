@@ -1,0 +1,150 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+
+nav
+{
+    padding-top: 50px;
+}
+
+nav ul li
+{
+    list-style: none;
+    position: relative;
+    transition: 0.5s;
+    display: inline-flex;
+}
+
+nav ul li a
+{
+    text-decoration: none; 
+    color: #cacaca;
+    transition: 0.5s;
+    font-size: large;
+}
+
+nav ul li a:hover
+{
+    color: #000;
+}
+
+nav ul li:hover
+{
+    transform: translateY(-10px);
+}
+
+nav a::after
+{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #f3971b;
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+nav a:hover::after
+{
+    width: 100%;
+}
+
+main
+{
+    background-color: mediumslateblue;
+    width: 60%;
+    padding: 100px;
+    border-radius: 30px;
+}
+
+h1
+{
+    color: #fff;
+    font-size: 70px;
+}
+
+h2
+{
+    color: #fff;
+    font-size: large;
+}
+
+input
+{
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+input
+{
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+textarea
+{
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.name
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+button
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    border-style: hidden; 
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.7s;
+}
+
+button:hover
+{
+    background-color: #f3971b;
+    color: #fff;
+    transform: translateY(-20px);
+}
+
+font
+{
+    font-size: larger;
+}
+
+.text-message
+{
+    padding: 30px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: x-large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
